@@ -16,7 +16,7 @@ body{
     text-align: center;
     margin:100px 250px 100px 250px;
     color:rgba(255, 166, 0, 0.591);
-    text-shadow:0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
+    text-shadow:0 0 8px orange, 0 0 10px orange, 0 0 60px orange;
 }
 .buttonsgrp{
     margin:50px 350px 50px 350px;
@@ -36,4 +36,14 @@ img{
 .score{
     text-align: center;
     margin:0;
+}
+#result{
+   
+    color:rgba(255, 166, 0, 0.591);
+    text-shadow:0 0 8px orange, 0 0 10px orange, 0 0 60px orange;
+}
+#resultdiv{
+    text-align: center;
+    margin-top:150px;
+    display: none;
 }
