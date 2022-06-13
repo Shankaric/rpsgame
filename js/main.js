@@ -1,6 +1,11 @@
 const resultcont=document.getElementById('resultcont');
 const userimg=document.getElementById('userimg');
 const compimg=document.getElementById('compimg');
+const uscore=document.getElementById('uscore');
+const cscore=document.getElementById('cscore');
+var p=0;
+var c=0;
+    
 function btnvalue(value){
     let val=value;
     computer=['rock','paper','scissor'];
@@ -33,8 +38,11 @@ function btnvalue(value){
        else if(val=='rock' && compchoose=='paper'){
         console.log('computer win');
         resultcont.innerHTML='computer win';
+       
         document.getElementById('userimg').src="./images/Rock.png";
       document.getElementById('compimg').src="./images/cpaper.png";
+      c++;
+      cscore.innerHTML=c;
     
        }
        else if(val=='rock' && compchoose=='scissor'){
@@ -42,42 +50,47 @@ function btnvalue(value){
         resultcont.innerHTML='you win';
         document.getElementById('userimg').src="./images/Rock.png";
         document.getElementById('compimg').src="./images/cScissors.png";
-    
+        p++;
+        uscore.textContent=p;
        }
        else if(val=='paper' && compchoose=='scissor'){
         console.log('computer win');
         resultcont.innerHTML='computer win';
+        
         document.getElementById('userimg').src="./images/paper.png";
         document.getElementById('compimg').src="./images/cScissors.png";
-    
+        c++;
+        cscore.textContent=c;
        }
        else if(val=='paper' && compchoose=='rock'){
         console.log('you win');
+     
         resultcont.innerHTML='you win';
         document.getElementById('userimg').src="./images/paper.png";
         document.getElementById('compimg').src="./images/cRock.png";
-    
+        p++;
+        uscore.textContent=p;
        }
 
        else if(val=='scissor' && compchoose=='rock'){
         console.log('computer win');
         resultcont.innerHTML='computer win';
+       
         document.getElementById('userimg').src="./images/Scissors.png";
         document.getElementById('compimg').src="./images/cRock.png";
-    
+        c++;
+        cscore.textContent =c;
        }
        else if(val=='scissor' && compchoose=='paper'){
         console.log('you win');
+       
         resultcont.innerHTML='you win';
         document.getElementById('userimg').src="./images/Scissors.png";
         document.getElementById('compimg').src="./images/cpaper.png";
-    
+        p++;
+        uscore.textContent =p;
        }
-
-
-
-
-
+     
 
 
 

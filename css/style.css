@@ -1,6 +1,6 @@
 body{
     /* background-color: #9c27b091 !important; */
-    background-image: url('https://t4.ftcdn.net/jpg/03/35/88/27/240_F_335882778_A0HIcpMftzE242oQM4ewExiQjBDdFnsG.jpg');
+    background-image: url('https://img.freepik.com/free-photo/dark-room-exhibits-modern-feel-with-orange-neon-lights_337307-114.jpg');
     background-size: cover;
 }
 .btn-outline-warning{
@@ -22,11 +22,18 @@ body{
     margin:50px 350px 50px 350px;
 }
 .imgcont{
-    margin: 50px 350px 50px 350px;
+    margin: 10px 350px 10px 350px;
     text-align: center;
 }
 img{
     height:100px;
     width:100px;
 
+}
+/* #compimg{
+    transform: rotate(180deg);
+} */
+.score{
+    text-align: center;
+    margin:0;
 }

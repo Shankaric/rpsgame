@@ -14,21 +14,27 @@
     <div class="row">
         <div class="col-md-6">
             <h3>Player</h3>
-            <h4>0</h4>
+            <h4 id="uscore">0</h4>
         </div>
         <div class="col-md-6">
             <h3>Computer</h3>
-            <h4>0</h4>
+            <h4 id="cscore">0</h4>
         </div>
     </div>
+  
+      
+  <h2 id="resultcont">Let's play</h2>
+    
+
     </div>
+   
    <div class="imgcont">
  <div class="row">
     <div class="col-md-6 img">
-        <img src="./images/uicon.png" alt="">
+        <img src="./images/uicon.png" alt="" id="userimg">
     </div>
     <div class="col-md-6 img">
-        <img src="./images/cicon.png" alt="">
+        <img src="./images/cicon.png" alt="" id="compimg">
     </div>
  </div>
   
@@ -36,15 +42,16 @@
     <div class="buttonsgrp">
         <div class="row">
     <div class="col-md-4">
-    <button class="btn btn-outline-warning">rock</button>
+    <button class="btn btn-outline-warning" value="rock" id="rock" onclick="btnvalue(this.value)">rock</button>
 </div>
 <div class="col-md-4">
-    <button class="btn btn-outline-warning">paper</button>
+    <button class="btn btn-outline-warning" value="paper" id="paper" onclick="btnvalue(this.value)">paper</button>
 </div>
 <div class="col-md-4">
-    <button class="btn btn-outline-warning">scissor</button>
+    <button class="btn btn-outline-warning" value="scissor" id="rock" onclick="btnvalue(this.value)">scissor</button>
 </div>
    </div>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
