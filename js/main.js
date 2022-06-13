@@ -9,6 +9,7 @@ var c=0;
 var round=0;
 let person = prompt("Please enter your name");
 document.getElementById('pname').innerHTML=person;
+if(person != '' && person != null){
 function btnvalue(value){
     round++;
     console.log(round);
@@ -18,8 +19,8 @@ function btnvalue(value){
     console.log(val);
     console.log(compchoose);
     if(val==compchoose){
-        console.log('match draw');
-        resultcont.innerHTML='match draw';
+        console.log('match Tie');
+        resultcont.innerHTML='Match Tie';
         if(val='rock'){
             document.getElementById('userimg').src="./images/Rock.png";
         }
@@ -70,7 +71,7 @@ function btnvalue(value){
        else if(val=='paper' && compchoose=='rock'){
         console.log('you win');
      
-        resultcont.innerHTML=person+ 'win';
+        resultcont.innerHTML=person+ ' win';
         document.getElementById('userimg').src="./images/paper.png";
         document.getElementById('compimg').src="./images/cRock.png";
         p++;
@@ -103,12 +104,21 @@ function btnvalue(value){
         if(val>compchoose){
             document.getElementById('result').innerHTML=person+ ' won';
         }
+        else if(val==compchoose){
+            document.getElementById('result').innerHTML='Match Tie';
+
+        }
         else{
             document.getElementById('result').innerHTML='computer won';
         }
     
 
     }
+}
 
 }
 
+else{
+    alert('you must enter your name');
+    location.reload();
+}
