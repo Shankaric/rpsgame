@@ -7,7 +7,7 @@ var overall=document.getElementById('overall');
 var p=0;
 var c=0;
 var round=0;
-let person = prompt("Please enter your name");
+// let person = prompt("Please enter your name");
 document.getElementById('pname').innerHTML=person;
 if(person != '' && person != null){
 function btnvalue(value){

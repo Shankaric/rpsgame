@@ -1,9 +1,13 @@
 body{
     /* background-color: #9c27b091 !important; */
     background-image: url('https://img.freepik.com/free-photo/dark-room-exhibits-modern-feel-with-orange-neon-lights_337307-114.jpg');
-    background-size: cover;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+
 }
-.btn-outline-warning{
+/* .btn-outline-warning{
     color:orange;
     box-shadow: 0 0 20px orange;
     margin: 60px;
@@ -32,7 +36,7 @@ img{
 }
 /* #compimg{
     transform: rotate(180deg);
-} */
+} 
 .score{
     text-align: center;
     margin:0;
@@ -46,4 +50,59 @@ img{
     text-align: center;
     margin-top:150px;
     display: none;
+} */
+/* temp branch css */
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 120px;
+    color:rgba(255, 166, 0, 0.591);
+    text-shadow:0 0 8px orange, 0 0 10px orange, 0 0 60px orange;
+}
+.scorelist{
+    text-align:center;
+}
+.resultboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgba(255, 166, 0, 0.591);
+    text-shadow:0 0 8px orange, 0 0 10px orange, 0 0 60px orange;
+}
+.imagecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}
+.buttoncontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+.btncont{
+    color:orange;
+    box-shadow: 0 0 20px orange;
+}
+img{
+    height:100px;
+    width:100px;
+}
+@media only screen and (max-width: 600px) {
+    .buttoncontainer{
+           gap:70px;
+    }
+    .score{
+        gap:120px;
+        margin-top: 160px;
+
+    }
+    .imagecontainer{
+       gap: 100px;
+    }
+     
 }
